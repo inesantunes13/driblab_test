@@ -1,0 +1,42 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Debug detect_modified.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/yolov5/detect_modified.py",
+            "args": ["--weights", "yolov5x.pt", "--img", "640", "--source", "../clips/clip_1.mp4", "--save-txt", "--save-crop", "--save-csv"],
+            "cwd": "${workspaceFolder}/yolov5",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "pythonPath": "/home/atptl0008/anaconda3/envs/football_class_count/bin/python",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "debugOptions": [],
+            "externalConsole": false,
+            "disableOptimizations": false,
+            "preLaunchTask": null,
+            "postDebugTask": null
+        },
+
+        {
+            "name": "Python: Debug class_into_video.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/yolov5/class_into_video.py",
+            "args": ["--source", "../clips/clip_1.mp4", "--new_classification_file", "../all_frames_info.pkl", "--save-txt", "--save-crop"],
+            "cwd": "${workspaceFolder}/yolov5",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "pythonPath": "/home/atptl0008/anaconda3/envs/football_class_count/bin/python",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "debugOptions": [],
+            "externalConsole": false,
+            "disableOptimizations": false,
+            "preLaunchTask": null,
+            "postDebugTask": null
+        }
+    ]
+}
